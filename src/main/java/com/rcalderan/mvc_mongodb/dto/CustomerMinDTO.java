@@ -1,22 +1,12 @@
 package com.rcalderan.mvc_mongodb.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
 public class CustomerMinDTO {
 
     private String id;
     private String name;
-
-    public String getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public CustomerMinDTO() {
-    }
-    public CustomerMinDTO(String name, String id) {
-        this.name = name;
-        this.id = id;
-    }
 }
